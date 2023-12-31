@@ -22,7 +22,7 @@ st.button("Reset", type="primary")
 if st.button('작성 시작'):
     with st.spinner('Wait for it...'):
         time.sleep(1)    
-        result = chat_model.predict(content + "에 대한 시를 3줄로 써줘")
+        result = chat_model.predict(content + "에 대한 시를 작성해 주세요")
         st.write(result)
 else:
     st.write('다시 작성 하세요')
