@@ -14,7 +14,7 @@ from langchain.chat_models import ChatOpenAI
 chat_model = ChatOpenAI()
 
 st.title(':blue[인공지능] 시인 :sunglasses:')
-content = st.text_input('시의 주제를 주면 시를 작성해 줄께')
+content = st.text_input('시의 주제를 주면 시를 작성해 줄께~~~~~')
 
 st.write('시의 주제는 = ', content)
 
@@ -22,7 +22,7 @@ st.button("Reset", type="primary")
 if st.button('작성 시작'):
     with st.spinner('Wait for it...'):
         time.sleep(1)    
-        result = chat_model.predict(content + "에 대한 시를 작성해 주세요")
+        result = chat_model.predict(content + "에 대한 시를 유머스럽게 작성해 줘")
         st.write(result)
 else:
     st.write('다시 작성 하세요')
