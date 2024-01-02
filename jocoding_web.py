@@ -14,7 +14,7 @@ from langchain.chat_models import ChatOpenAI
 chat_model = ChatOpenAI()
 
 st.title(':blue[인공지능] 시인 :sunglasses:')
-content = st.text_input('시의 주제를 제시하세요')
+content = st.text_input('시의 주제를 주면 시를 작성해 줄께')
 
 st.write('시의 주제는 = ', content)
 
